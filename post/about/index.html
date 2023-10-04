@@ -1,0 +1,170 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>关于博客 | Stokes128</title>
+<link rel="shortcut icon" href="https://stokes128x.github.io/favicon.ico?v=1696423628750">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stokes128x.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="关于博客 | Stokes128 - Atom Feed" href="https://stokes128x.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="我在这个博客上无主题无规律地写作。
+任何写作都是非常个人的，从这个与其他网站没有交集的孤岛上，我想尽量使自己的写作脱离作者个人的狭窄眼光，我尽力使自己的写作让更多人快乐和感动。
+顺带，我是一个计算数学方向的学生，我感兴趣的方向是数值线性代数..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://stokes128x.github.io">
+  <img class="avatar" src="https://stokes128x.github.io/images/avatar.png?v=1696423628750" alt="">
+  </a>
+  <h1 class="site-title">
+    Stokes128
+  </h1>
+  <p class="site-description">
+    The world changes as your wish changes.
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页/HOME
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档/Archives
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签/Tags
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于/About
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              关于博客
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-07-23
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>我在这个博客上无主题无规律地写作。<br>
+任何写作都是非常个人的，从这个与其他网站没有交集的孤岛上，我想尽量使自己的写作脱离作者个人的狭窄眼光，我尽力使自己的写作让更多人快乐和感动。<br>
+顺带，我是一个计算数学方向的学生，我感兴趣的方向是数值线性代数。我经常思考神，有时候我会感到一种迫切——是否真的存在神，神又是以何种方式影响人，甚至影响人类的？人和人类的关系究竟是什么？纵使我或许永远不知道这些问题的答案，但是这些问题会经常拦住在旅途中的我，它们迫使我看它们。我对音乐非常感兴趣，并且经常欣赏音乐。我知道一点古典音乐，现代音乐比较关注摇滚乐、电子舞曲和Vocaloid音乐。欣赏音乐是人的本能，因为不管有没有受过教育，人都会对音乐作出反应，有喜爱有讨厌，而不会完全无视。<em>The relationship between human and music amazes me.</em> 因此我正在学习音乐的形式。<br>
+我写作的主题或许与这些非常相关，因此我觉得上一段的提醒是必要的。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://stokes128x.github.io/post/230709/">
+              <h3 class="post-title">
+                进化树上的模仿小丑
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://stokes128x.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
